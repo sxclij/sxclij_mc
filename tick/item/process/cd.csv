@@ -1,1 +1,8 @@
-repeat,unconditional,always,"@e[type=item,tag=flag_cb] add flag_i1"
+repeat,unconditional,always,"tag @e[type=item,tag=flag_cb] add flag_i1"
+repeat,conditional,always,
+chain,unconditional,always,"execute as @e[type=item,tag=flag_i1] run data modify entity @s Item.tag.tmp set from entity @s Pos"
+chain,unconditional,always,"execute as @e[type=item,tag=flag_i1] run data modify entity @s Pos set from entity @s Item.tag.cmd.pos"
+chain,unconditional,always,"execute positioned as @e[type=item,tag=flag_i1] run data modify block ~ ~ ~ auto set value 1b"
+chain,unconditional,always,"execute as @e[type=item,tag=flag_i1] run data modify entity @s Pos set from entity @s Item.tag.tmp"
+chain,unconditional,always,"execute as @e[type=item,tag=flag_i1] run data remove entity @s Item.tag.tmp"
+chain,unconditional,always,"tag @e[type=item,tag=flag_i1] remove flag_i1"
