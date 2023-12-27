@@ -1,0 +1,4 @@
+repeat,unconditional,always,"tag @e[type=item,tag=!processed] add flag_process"
+repeat,conditional,always,
+chain,unconditional,always,"tag @e[type=item,tag=flag_process] add processed"
+chain,unconditional,always,"tag @e[type=item,tag=flag_process,nbt={Item:{tag:{cmd:{enabled:1b,active:{dropped:1b}}}}}] add flag_cb"

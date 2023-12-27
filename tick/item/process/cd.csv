@@ -1,0 +1,1 @@
+repeat,unconditional,always,"@e[type=item,tag=flag_cb] add flag_i1"
