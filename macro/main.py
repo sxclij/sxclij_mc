@@ -7,7 +7,6 @@ path = "C:/u/vscode/repo/sxclij_mc/cb/tick/item/cb.csv"
 with open(path) as f:
     reader = csv.reader(f, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
 
-    i = 0
     for row in reader:
         
         pyautogui.press("t")
@@ -39,5 +38,3 @@ with open(path) as f:
         pyautogui.press("t")
         pyautogui.write("/tp @s ~ ~1 ~")
         pyautogui.press("enter")
-
-        i+=1

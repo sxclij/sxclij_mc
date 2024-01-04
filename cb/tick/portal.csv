@@ -1,0 +1,1 @@
+repeat,unconditional,always,"tag @e[type=item,tag=!processed] add flag_i1"
