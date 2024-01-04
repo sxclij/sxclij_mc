@@ -1,7 +1,7 @@
 repeat,unconditional,always,"tag @e[type=item,tag=!processed] add flag_i1"
 repeat,conditional,always,
 chain,unconditional,always,"tag @e[type=item,tag=flag_i1] add processed"
-chain,unconditional,always,"tag @e[type=item,tag=flag_i1,nbt={Item:{tag:{cmd:{enabled:1b,active:{dropped:1b}}}}}] add flag_i2"
+chain,unconditional,always,"tag @e[type=item,tag=flag_i1,nbt={Item:{tag:{cmd:{enabled:1b}}}}] add flag_i2"
 chain,conditional,always,"setblock ~ ~2 ~ chain_command_block[facing=up]"
 chain,unconditional,always,"tag @e[type=item,tag=flag_i1] remove flag_i1"
 air,,,
