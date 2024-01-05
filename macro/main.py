@@ -2,7 +2,9 @@ import csv
 import pprint
 import pyautogui
 
-path = "C:/u/vscode/repo/sxclij_mc/cb/event/dev/register.csv"
+
+path = "C:/u/vscode/repo/sxclij_mc/cb/tick/item/cb.csv"
+# path = "C:/u/vscode/repo/sxclij_mc/cb/event/dev/register.csv"
 
 with open(path) as f:
     reader = csv.reader(f, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
