@@ -1,0 +1,1 @@
+chain,unconditional,always,"execute positioned as @e[type=item,tag=flag_i1] run tag @e[type=item,distance=0.01..5] add flag_i2"
